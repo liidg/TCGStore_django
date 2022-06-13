@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STRIPE_SECRET_KEY ='sk_test_51LA2u3Jbui6qd1imcoehZR04abSl90cNuVFefU8dhFmrd9oCcaToTANyKvMPzCQhDo2BQW6QUydaHToQyAjs8ncy00ATAkSwru'
+
 
 # Application definition
 
@@ -44,11 +46,11 @@ INSTALLED_APPS = [
     'djoser',
 
     'product',
+    'order',
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
-    "http://localhost:8000"
 ]
 
 MIDDLEWARE = [
